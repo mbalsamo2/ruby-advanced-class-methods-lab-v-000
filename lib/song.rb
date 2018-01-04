@@ -32,9 +32,16 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    binding.pry
+
     song = self.new
     song.name = name
+    @@all.each do |song_name|
+      if song_name == name
+        song
+      else
+        song.save
+        song
+      end
 
 
   end
