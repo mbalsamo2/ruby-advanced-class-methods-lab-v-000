@@ -53,7 +53,7 @@ class Song
     song
   end
 
-  def self.create_from_filename
+  def self.create_from_filename(file)
     song = self.new
     info = file.split(/(\s-\s|\Wmp3)/)
     song.name = info[2]
