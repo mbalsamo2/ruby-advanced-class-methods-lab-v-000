@@ -44,11 +44,12 @@ class Song
     self.all.sort_by {|song| song.name}
   end
 
-  def self.new_from_filename(name)
-    binding.pry
-    song = self.new_by_name
-    song.name = name
-
+  def self.new_from_filename(file)
+    # binding.pry
+    song = self.new
+    info = file.split(/(\s-\s|\Wmp3)/)
+    name = info[0]
+    artist_name = info[2]
   end
 
 end
