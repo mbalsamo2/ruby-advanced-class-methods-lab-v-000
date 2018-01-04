@@ -32,7 +32,6 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-
     song = self.new
     song.name = name
     @@all.each do |song_name|
@@ -42,8 +41,7 @@ class Song
         song.save
         song
       end
-
-
+    end  
   end
 
 
