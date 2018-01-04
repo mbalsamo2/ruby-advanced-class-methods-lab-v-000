@@ -45,7 +45,6 @@ class Song
   end
 
   def self.new_from_filename(file)
-    # binding.pry
     song = self.new
     info = file.split(/(\s-\s|\Wmp3)/)
     song.name = info[2]
