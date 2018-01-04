@@ -41,10 +41,7 @@ class Song
       if song_name == name
         song
       else
-        song = self.new
-        song.name = name
-        song.save
-        song
+        .create_by_name(name)
       end
     end
   end
