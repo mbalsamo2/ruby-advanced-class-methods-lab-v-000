@@ -43,7 +43,7 @@ class Song
   def self.alphabetical
     binding.pry
     self.sort_by
-    
+
   end
 
 
