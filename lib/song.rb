@@ -42,7 +42,7 @@ class Song
 
   def self.alphabetical
     binding.pry
-    self.sort_by
+    self.sort_by {|a, b| a <=> b}
 
   end
 
