@@ -48,8 +48,8 @@ class Song
     # binding.pry
     song = self.new
     info = file.split(/(\s-\s|\Wmp3)/)
-    song.name = info[0]
-    song.artist_name = info[2]
+    song.name = info[2]
+    song.artist_name = info[0]
     song
   end
 
